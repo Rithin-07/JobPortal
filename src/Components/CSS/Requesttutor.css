@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.register-job-seeker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.registration-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Image Section */
+.image-container {
+  flex: 1;
+  /* background-image: url('/path-to-your-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-container {
+    display: block;
+  }
+}
+
+/* Form Section */
+.form-container {
+  flex: 2;
+  padding: 40px 30px;
+}
+
+h1 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 20px;
+}
+
+.MuiInputLabel-root {
+  color: #333333;
+}
+
+.MuiSelect-select,
+.MuiInputBase-input {
+  padding: 10px;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline,
+.MuiInputLabel-root.Mui-focused {
+  color: #009688;
+  border-color: #009688;
+}
+
+.MuiCheckbox-root.Mui-checked,
+.MuiRadio-root.Mui-checked {
+  color: #009688;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.MuiButton-root {
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.MuiButton-contained {
+  background-color: #009688;
+}
+
+.MuiButton-contained:hover {
+  background-color: #00796b;
+}
+
+.MuiButton-contained.Mui-disabled {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.MuiButton-outlined {
+  border: 2px solid #009688;
+  color: #009688;
+}
+
+.MuiButton-outlined:hover {
+  border-color: #00796b;
+  background-color: #00796b;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-container {
+    flex-direction: column;
+  }
+
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .MuiButton-root {
+    font-size: 16px;
+  }
+
+  .navigation-links {
+    flex-direction: column;
+  }
+
+  .navigation-links .MuiButton-root {
+    margin-bottom: 10px;
+  }
+}

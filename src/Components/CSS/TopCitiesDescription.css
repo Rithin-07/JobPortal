@@ -1,0 +1,83 @@
+/* TopCitiesDescription.css */
+
+.top-cities-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.top-cities-container:hover {
+  transform: scale(1.03);
+}
+
+.top-cities-image-container {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-right: 20px;
+  max-width: 45%;
+}
+
+.top-cities-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.top-cities-container:hover .top-cities-image {
+  transform: scale(1.05);
+}
+
+.top-cities-content-container {
+  flex: 2;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-cities-content-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.top-cities-content-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .top-cities-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .top-cities-image-container {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .top-cities-content-container {
+      padding: 15px;
+  }
+
+  .top-cities-content-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .top-cities-content-container p {
+      font-size: 1rem;
+  }
+}

@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Container for the help center */
+  .help-center {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f2f5;
+    background: url("C:\Users\91770\Desktop\job\khome\src\Assets\image copy 3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  /* Navigation links (commented out in component) */
+  .links {
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Page title */
+  .page-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Description text */
+  .description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Cards container */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* CardComponent styling */
+  .card {
+    width: 280px; /* Adjust width to fit the layout */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
